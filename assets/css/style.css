@@ -660,6 +660,20 @@ section {
   border-radius: 10px; /* Opcional: esquinas redondeadas */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: agrega un efecto de sombra suave */
 }
+.card-custom-border .card-body {
+  font-family: 'Raleway', sans-serif; /* Fuente Raleway */
+  font-size: 0.9rem; /* Tamaño de la fuente */
+  line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Ajustar los títulos (h5) dentro de las cards */
+.card-custom-border h5 {
+  font-family: "raleway_bold", sans-serif;
+  font-size: 1rem; /* Tamaño más pequeño */
+  font-weight: 700; /* Mantener énfasis */
+  text-transform: uppercase; /* Mayúsculas */
+  margin-bottom: 0.8rem; /* Espaciado inferior */
+}
 
 
 /*--------------------------------------------------------------
