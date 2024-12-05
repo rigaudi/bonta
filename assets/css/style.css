@@ -675,6 +675,13 @@ section {
   margin-bottom: 0.8rem; /* Espaciado inferior */
 }
 
+.card-custom-border h4 {
+  font-family: "raleway", sans-serif;
+  font-size: 1.3rem; /* Tamaño más pequeño */
+  font-weight: 700; /* Mantener énfasis */
+  text-transform: uppercase; /* Mayúsculas */
+  margin-bottom: 0.8rem; /* Espaciado inferior */
+}
 
 /*--------------------------------------------------------------
 # Features
@@ -692,9 +699,17 @@ section {
 }
 
 .features .icon-box i {
-  font-size: 32px;
+  font-size: 64px;
   padding-right: 10px;
   line-height: 1;
+}
+
+.icon_curso{
+ 
+  font-size: 1.9rem; /* Ajusta el tamaño del ícono a tu gusto */
+  line-height: 1;
+  margin-bottom: 15px;  /* Espacio entre el icono y el título */
+  padding-top: 10px; 
 }
 
 .features .icon-box h3 {
@@ -720,19 +735,39 @@ section {
 .cta_slogan {
   min-height: 500px;
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/WEB_INICIO.jpg") center center;
-  background-size: cover;
+  background-size: 20%;  /* Aquí puedes ajustar el tamaño de la imagen */
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 60px 0;
 }
+
 @media (min-width: 1024px) {
   .cta_slogan {
     background-attachment: fixed;
+    background-size: cover;  /* En pantallas grandes, podemos volver a cover */
   }
 }
+
 .cta {
   min-height: 300px;
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/c.jpg") center center;
-  background-size: cover;
+  background-size: 100%;  /* Ajusta también el tamaño de la imagen aquí */
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 60px 0;
+}
+
+/* Estilo para móviles */
+@media (max-width: 767px) {
+  .cta_slogan {
+    background-size: contain;  /* Ajusta la imagen para que quede dentro del área visible */
+    background-position: center center;  /* Mantén la posición centrada en móviles */
+  }
+
+  .cta {
+    background-size: contain;  /* Ajuste para la segunda imagen en móviles */
+    background-position: center center;
+  }
 }
 
 .cta h3 {
