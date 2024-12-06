@@ -656,16 +656,38 @@ section {
   color: #fff;
 }
 .card-custom-border {
-  border: 2px solid #00ff41; /* Borde con el color específico */
-  border-radius: 10px; /* Opcional: esquinas redondeadas */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: agrega un efecto de sombra suave */
-}
-.card-custom-border .card-body {
-  font-family: 'Raleway', sans-serif; /* Fuente Raleway */
-  font-size: 0.9rem; /* Tamaño de la fuente */
-  line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+  border: 2px solid #00ff41;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Espacio entre las tarjetas */
+  text-align: center; /* Centrar contenido */
+  display: flex; /* Para asegurar que el contenido esté centrado */
+  flex-direction: column; /* Orientación vertical del contenido */
+  align-items: center; /* Centrar horizontalmente el contenido */
+  justify-content: center; /* Centrar verticalmente el contenido */
 }
 
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .row {
+    display: flex; /* Asegurarse de que las filas también se comporten como flexbox */
+    flex-wrap: wrap; /* Permitir que las tarjetas salten a la siguiente línea */
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+  }
+
+  .card-custom-border {
+    width: 90%; /* Ocupa el 90% del ancho */
+    margin: 10px auto; /* Centra horizontalmente la tarjeta */
+  }
+
+  .icon_curso {
+    font-size: 30px; /* Ajustar tamaño del ícono */
+  }
+
+  h4 p {
+    font-size: 14px; /* Ajustar tamaño del texto */
+  }
+}
 /* Ajustar los títulos (h5) dentro de las cards */
 .card-custom-border h5 {
   font-family: "raleway_bold", sans-serif;
@@ -681,6 +703,43 @@ section {
   font-weight: 700; /* Mantener énfasis */
   text-transform: uppercase; /* Mayúsculas */
   margin-bottom: 0.8rem; /* Espaciado inferior */
+}
+
+/* Ajustes para ocupar todo el ancho */
+.full-width {
+  width: 100%; /* Asegura que las tarjetas ocupen el ancho completo */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  border-radius: 10px; /* Bordes redondeados */
+  background: #fff; /* Fondo blanco */
+  text-align: center; /* Centrar texto */
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+
+/* Alineación de contenido */
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Coloca las tarjetas en una columna */
+  }
+  .col-md-6 {
+    max-width: 100%; /* Ocupa el ancho completo en dispositivos pequeños */
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+  }
+}
+
+.icon_cif{
+  color: #000000;
+  width: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -1987,7 +2046,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ea6981;
+  color: #00ff41;
   font-size: 18px;
   line-height: 1;
 }
@@ -2003,7 +2062,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #000000;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
