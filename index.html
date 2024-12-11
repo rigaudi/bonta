@@ -555,14 +555,12 @@
             <section id="cta" class="cta">
               <div class="container">
                 <div class="text-center">
-                  <h3>Call To Action</h3>
+                  <h3>BONTA</h3>
                   <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.
+                    “Ofrecemos soluciones integrales en consultoría aeronaútica, desde planificación estratégica hasta
+                    optimización operativa, para potenciar el desempeño de tu empresa.”
                   </p>
-                  <a class="cta-btn" href="#">Call To Action</a>
+                  <a class="cta-btn" href="#"><i class="bi bi-whatsapp"></i> Contactanos</a>
                 </div>
               </div>
             </section>
@@ -884,7 +882,7 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="contactForm" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required />
@@ -897,19 +895,43 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required />
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="Mensaje" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Cargando</div>
                 <div class="error-message"></div>
-                <div class="sent-message">
-                  Tu mensaje ha sido enviado. Gracias!
-                </div>
+                <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
               </div>
               <div class="text-center">
-                <button type="submit">Enviar mensaje</button>
+                <button type="button" id="sendButton">Enviar mensaje</button>
               </div>
             </form>
+            
+            <script>
+              // Escuchar el evento de clic en el botón
+              document.getElementById('sendButton').addEventListener('click', function () {
+                // Obtener los valores de los campos
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+            
+                // Validar que los campos no estén vacíos
+                if (name && email && subject && message) {
+                  // Construir el mensaje para WhatsApp
+                  const whatsappMessage = `Hola, mi nombre es ${encodeURIComponent(name)}.\nEmail: ${encodeURIComponent(email)}\nAsunto: ${encodeURIComponent(subject)}\nMensaje: ${encodeURIComponent(message)}`;
+            
+                  // Crear el enlace de WhatsApp
+                  const whatsappUrl = `https://wa.me/5491131226259?text=${whatsappMessage}`;
+            
+                  // Abrir el enlace en una nueva pestaña
+                  window.open(whatsappUrl, '_blank');
+                } else {
+                  // Mostrar alerta si algún campo está vacío
+                  alert('Por favor, completa todos los campos antes de enviar.');
+                }
+              });
+            </script>
           </div>
         </div>
       </div>
@@ -980,8 +1002,7 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-whatsapp"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

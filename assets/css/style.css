@@ -916,7 +916,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -1183,7 +1183,7 @@ section {
   color: #00ff41;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1247,7 +1247,7 @@ section {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #d01d3f;
+  color: #00ff41;
   transition: 0.3s;
 }
 
@@ -1496,7 +1496,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type=button] {
   background: #000000;
   border: 0;
   padding: 10px 28px;
@@ -1505,7 +1505,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type=button]:hover {
   background: #00ff41;
 }
 
@@ -2098,7 +2098,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #777777;
 }
 
@@ -2222,7 +2222,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #d01d3f;
+  background: black;
   color: #fff;
   text-decoration: none;
 }
