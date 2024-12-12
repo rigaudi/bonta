@@ -299,7 +299,8 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: black;
+  color: white;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -318,7 +319,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #493c3e;
+  color: #ffffff;
 }
 
 .navbar-mobile a:hover,
@@ -896,7 +897,7 @@ section {
 /* Estilo para móviles */
 @media (max-width: 767px) {
   .cta_slogan {
-    min-height: 210px;
+    min-height: 220px;
     background-size: contain;  /* Ajuste para dispositivos móviles */
     background-position: center center;
   }
