@@ -43,6 +43,9 @@ h6 {
   font-size: 1.3rem;
   color: #000;
 }
+p {
+  word-spacing: 0em;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -884,7 +887,55 @@ section {
     background-size: cover;  /* Mantener el ajuste para pantallas grandes */
   }
 }
+/* Estilo general del texto */
+.styled-text {
+  font-family: "Raleway_italic", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
+/* Estilo para palabras en verde (código #00ff41) */
+.styled-text .red {
+  color: #00ff41; /* Color verde */
+  font-size: 35px; /* Tamaño más grande para destacar */
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Estilo para palabras en blanco */
+.styled-text .white {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Ajuste del diseño responsivo */
+@media (max-width: 767px) {
+  .styled-text {
+    font-size: 28px;
+  }
+  .styled-text .red,
+  .styled-text .white {
+    font-size: 32px;
+  }
+}
+
+/* Ajuste del diseño responsivo */
+@media (max-width: 767px) {
+  .styled-text {
+    font-size: 28px;
+  }
+  .styled-text .red,
+  .styled-text .white {
+    font-size: 32px;
+  }
+}
 .cta {
   min-height: 300px;
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/c.jpg") center center;
