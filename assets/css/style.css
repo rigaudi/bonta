@@ -707,6 +707,17 @@ section {
 
 
 /* Personalización del modal */
+
+/* Ajuste para centrar los modales */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Centrado vertical */
+  margin: auto; /* Centrado horizontal */
+  max-width: 90%; /* Para evitar que el modal ocupe demasiado espacio en pantallas pequeñas */
+}
+
 .modal-custom .modal-content {
   border: 3px solid #00ff41; /* Borde verde */
   border-radius: 10px; /* Esquinas redondeadas */
