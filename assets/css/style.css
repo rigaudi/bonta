@@ -16,7 +16,7 @@
   src: url(./fonts/Raleway-Italic-VariableFont_wght.ttf);
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #444444;
 }
 
@@ -55,7 +55,7 @@ p {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 50px;
+  bottom: 80px;
   z-index: 996;
   background: #00ff41;
   width: 50px;
@@ -1237,7 +1237,7 @@ section {
   font-size: 42px;
   color: #00ff41;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 20px;
 }
 
