@@ -54,7 +54,7 @@ p {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  right: 11px;
   bottom: 80px;
   z-index: 996;
   background: #00ff41;
@@ -1036,8 +1036,8 @@ section {
   padding: 0 10px;
 }
 .clients .swiper-slide img {
-  max-width: 150px; /* Ajusta este valor según tus necesidades */
-  max-height: 100px; /* Ajusta este valor según tus necesidades */
+  max-width: 130px; /* Ajusta este valor según tus necesidades */
+  max-height: 80px; /* Ajusta este valor según tus necesidades */
   width: auto;
   height: auto;
   margin: 0 auto; /* Centra la imagen dentro de la diapositiva */
