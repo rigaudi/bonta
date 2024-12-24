@@ -1006,6 +1006,47 @@ section {
     background-attachment: fixed;
   }
 }
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+  padding: 12px 0;
+}
+
+.clients .swiper {
+  padding: 10px 0;
+}
+
+.clients .swiper-wrapper {
+  height: auto;
+}
+
+.clients .swiper-slide {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente */
+  height: 100%;           /* Asegura que las diapositivas tengan altura completa */
+}
+.clients .swiper-slide img {
+  max-width: 100%;        /* Asegura que las imágenes no se desborden */
+  max-height: 100px;      /* Controla la altura máxima de los logos */
+  width: auto;            /* Mantiene la proporción de las imágenes */
+  height: auto;
+  transition: 0.3s;
+  padding: 0 10px;
+}
+.clients .swiper-slide img {
+  max-width: 150px; /* Ajusta este valor según tus necesidades */
+  max-height: 100px; /* Ajusta este valor según tus necesidades */
+  width: auto;
+  height: auto;
+  margin: 0 auto; /* Centra la imagen dentro de la diapositiva */
+}
+
+.clients .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio

@@ -28,6 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
+
   <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
@@ -592,6 +593,7 @@
     </section>
     <!-- End Cta Section -->
 
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
@@ -842,7 +844,62 @@
     </div>
     </section>
     <!-- End Team Section -->
-
+    <!-- <div class="section-title">
+      <h3>Links <span>útiles</span></h3>
+    </div> -->
+    
+    <section id="clients" class="clients section light-background">
+      <div class="container" data-aos="zoom-in">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 3000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": { "slidesPerView": 1, "spaceBetween": 20 },
+                "480": { "slidesPerView": 2, "spaceBetween": 30 },
+                "640": { "slidesPerView": 3, "spaceBetween": 40 },
+                "992": { "slidesPerView": 4, "spaceBetween": 50 },
+                "1200": { "slidesPerView": 4, "spaceBetween": 50 }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <a href="https://yovuelo.com.ar/" target="_blank">
+                <img src="assets/img/linksutiles/link1.png" class="img-fluid" alt="Consultoría">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.eana.com.ar/" target="_blank">
+                <img src="assets/img/linksutiles/link2.png" class="img-fluid" alt="Client 2">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.argentina.gob.ar/anac" target="_blank">
+                <img src="assets/img/linksutiles/link3.png" class="img-fluid" alt="Client 3">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.smn.gob.ar/" target="_blank">
+                <img src="assets/img/linksutiles/link4.png" class="img-fluid" alt="Client 4">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+<br>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -1020,7 +1077,16 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+ <!-- Swiper Initialization -->
+ <script>
+   document.addEventListener('DOMContentLoaded', () => {
+     const swiperConfigElement = document.querySelector('.swiper-config');
+     const swiperConfig = JSON.parse(swiperConfigElement.textContent);
 
+     new Swiper('.init-swiper', swiperConfig);
+   });
+ </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
