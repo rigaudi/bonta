@@ -109,7 +109,7 @@ p {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(255, 255, 255);
+  background: #9e9e9e;
   padding: 7px 0;
 }
 
@@ -603,6 +603,7 @@ section {
   font-family: 'raleway_bold', sans-serif;
 }
 .services {
+  background-color: #9E9E9E;
   padding-bottom: 30px;
 }
 
@@ -1340,6 +1341,7 @@ section {
 --------------------------------------------------------------*/
 .faq {
   padding: 60px 0;
+  background-color: #9E9E9E;
 }
 
 .faq .faq-list {
@@ -1348,7 +1350,7 @@ section {
 }
 
 .faq .faq-list li {
-  border-bottom: 1px solid #f1eeef;
+  border-bottom: 1px solid #000000;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -2194,7 +2196,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #9e9e9e;
 }
 
 #footer .footer-top .footer-contact {
@@ -2214,13 +2216,13 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #777777;
+  color: #000000;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: #000000;
   position: relative;
   padding-bottom: 12px;
 }
