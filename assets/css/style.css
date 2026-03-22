@@ -17,7 +17,7 @@
 }
 body {
   font-family: "Raleway", sans-serif;
-  color: #444444;
+  color: #000000;
 }
 
 a {
@@ -86,7 +86,7 @@ p {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 #header .logo {
@@ -103,14 +103,55 @@ p {
   color: #fff;
 }
 
+/* Estado inicial → negro */
+#header:not(.header-scrolled) .logo img {
+  filter: brightness(0);
+}
+
+/* Con scroll → color normal */
+#header.header-scrolled .logo img {
+  filter: brightness(1);
+}
+
+.logo img {
+  transition: filter 0.3s ease;
+}
+
+/* Estado inicial (sin scroll) */
+#header:not(.header-scrolled) .navbar .active {
+  color: #000000;
+}
+
+/* Estado con scroll */
+#header.header-scrolled .navbar .active {
+  color: #ffffff;
+}
+
+/* Estado inicial (sin scroll) → subrayado negro */
+#header:not(.header-scrolled) .navbar > ul > li > a:before {
+  background-color: #000000 !important;
+}
+
+/* Estado con scroll → subrayado blanco */
+#header.header-scrolled .navbar > ul > li > a:before {
+  background-color: #ffffff !important;
+}
+
+/* Estado con scroll → subrayado blanco */
+#header.header-scrolled .navbar .mobile-nav-toggle:before {
+  color: #00EE03 !important;
+}
+
 #header .logo img {
-  max-height: 70px;
+  max-height: 34px;
+  margin: 8px;
 }
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: #9e9e9e;
+  background: #000000;
   padding: 7px 0;
+  border-bottom: 5px solid #00EE03;
 }
 
 /*--------------------------------------------------------------
@@ -146,7 +187,7 @@ p {
   align-items: center;
   justify-content: space-between;
   font-family: "Raleway", sans-serif;
-  color: #000;
+  color: #000000;
   font-size: 15px;
   padding: 0 4px;
   white-space: nowrap;
@@ -169,7 +210,7 @@ p {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: black !important;
+  background-color: #ffffff !important;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -186,7 +227,12 @@ p {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #000;
+  color: #ffffff;
+}
+
+#header.header-scrolled .navbar a,
+#header.header-scrolled .navbar a:focus {
+  color: #ffffff;
 }
 
 .navbar .dropdown ul {
@@ -283,7 +329,7 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(45, 37, 38, 0.9);
+  background: #000000;
   transition: 0.3s;
   z-index: 999;
 }
@@ -377,7 +423,6 @@ p {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: url("../img/hero-bg.jpg") top center; */
   background: #fff;
   background-size: cover;
   position: relative;
@@ -385,7 +430,6 @@ p {
 
 #hero:before {
   content: "";
-  /* background: rgba(0, 0, 0, 0.6); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -498,28 +542,13 @@ section {
 }
 
 .section-title {
-  text-align: center;
+  text-align: left;
 }
-
-/* .section-title h2 {
-  font-family: "Raleway_bold";
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 8px 20px;
-  line-height: 1;
-  margin: 0;
-  background: #fdeff2;
-  color: #00ff41;
-  display: inline-block;
-  text-transform: uppercase;
-  border-radius: 50px;
-} */
 
 .section-title h3 {
   font-family: "Raleway_bold";
-  margin: 40px 0 20px 0;
-  font-size: 40px;
+  margin: 60px 0 20px 0;
+  font-size: 65px;
   font-weight: 700;
 }
 
@@ -529,19 +558,44 @@ section {
 }
 
 .section-title p {
-  margin: 15px auto 0 auto;
-  font-weight: 600;
+  line-height: 35px;
+  margin: 15px auto 0 1479auto;
+  font-size: 28px;
 }
 
 @media (min-width: 1024px) {
   .section-title p {
-    width: 50%;
+    width: 100%;
   }
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+ #about {
+  position: relative;
+  overflow: hidden;
+}
+
+#about::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -0px;
+  width: 500px;
+  height: 500px;
+  background-image: url('../img/senado.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+#about .container {
+  position: relative;
+  z-index: 1;
+}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -603,7 +657,7 @@ section {
   font-family: 'raleway_bold', sans-serif;
 }
 .services {
-  background-color: #9E9E9E;
+  background-color: #767171;
   padding-bottom: 30px;
 }
 
@@ -923,7 +977,7 @@ section {
 /* Estilo para palabras en blanco */
 .styled-text .white {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 500;
   display: inline-block;
   margin: 5px;
@@ -1341,7 +1395,7 @@ section {
 --------------------------------------------------------------*/
 .faq {
   padding: 60px 0;
-  background-color: #9E9E9E;
+  background-color: #767171;
 }
 
 .faq .faq-list {
@@ -1413,21 +1467,40 @@ section {
 --------------------------------------------------------------*/
 .team {
   background: #fff;
-  padding: 60px 0;
+  padding: 100px 0;
+}
+
+.member {
+  position: relative;
+  overflow: visible !important; /* clave */
+  padding-top: 60px;
+}
+
+.member .member-img {
+  position: static; /* para que no interfiera */
+}
+
+.img-perfil {
+  object-fit: cover;
+  position: absolute;
+  top: -140px; /* mitad de la altura para que sobresalga */
+  left: 4%;
 }
 
 .team .member {
-  margin-bottom: 20px;
+  border: 3px solid #767171;
+  margin-bottom: 100px;
   overflow: hidden;
   text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 55px;
+  background-image: url('../img/noise.png');
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .team .member .member-img {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .team .member .social {
@@ -1467,14 +1540,15 @@ section {
 }
 
 .team .member .member-info {
-  padding: 25px 15px;
+  padding: 25px 25px;
 }
 
 .team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #493c3e;
+  text-align: left;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #000000;
 }
 
 .team .member .member-info span {
@@ -1485,10 +1559,15 @@ section {
 }
 
 .team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
+  text-align: left;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.member-info b {
+  font-weight: 800;
+  letter-spacing: 0.3px;
 }
 
 .team .member:hover .social {
@@ -2196,7 +2275,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #9e9e9e;
+  background: #767171;
 }
 
 #footer .footer-top .footer-contact {
