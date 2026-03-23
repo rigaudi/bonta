@@ -336,7 +336,6 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #000000;
   transition: 0.3s;
   z-index: 999;
 }
@@ -677,8 +676,8 @@ section {
   position: absolute;
   bottom: -140px;
   right: -0px;
-  width: clamp(200px, 30vw, 500px);
-  height: clamp(200px, 30vw, 500px);
+  width: clamp(250px, 30vw, 500px);
+  height: clamp(310px, 30vw, 500px);
   background-image: url('../img/diputados.png');
   background-repeat: no-repeat;
   background-size: contain;
