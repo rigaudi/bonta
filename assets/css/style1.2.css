@@ -800,11 +800,6 @@ section {
   margin-bottom: 0;
 }
 
-.services .icon-box:hover ,
-.services .icon-box:hover {
-  /* color: #fff; */
-}
-
 .services ul {
   list-style: none;
   padding-left: 20px;
@@ -833,6 +828,7 @@ section {
   background-color: white; /* Fondo inicial */
   transition: all 0.3s ease; /* Suavizar la transición */
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 .card-custom-border p {
