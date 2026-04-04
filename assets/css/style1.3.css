@@ -195,7 +195,7 @@ p {
   justify-content: space-between;
   font-family: "Raleway", sans-serif;
   color: #000000;
-  font-size: 15px;
+  font-size: 20px;
   padding: 0 4px;
   white-space: nowrap;
   transition: 0.3s;
@@ -863,7 +863,6 @@ section {
   justify-content: center;
   min-height: 100vh; /* Centrado vertical */
   margin: auto; /* Centrado horizontal */
-  max-width: 90%; /* Para evitar que el modal ocupe demasiado espacio en pantallas pequeñas */
 }
 
 .modal-custom .modal-content {
@@ -1076,14 +1075,12 @@ a:not(.collapsed) .arrow {
 /* Estilo general del texto */
 .styled-text {
   font-family: "Raleway", sans-serif;
-  line-height: 1.2;
-  text-align: center;
   font-weight: 800;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: auto;
   text-align: center;
-  font-size: clamp(24px, 4vw, 42px);
-  line-height: 1.2;
+  font-size: clamp(28px, 5vw, 90px);
+  line-height: 1.1;
 }
 
 /* Estilo para palabras en verde (código #00ff41) */
@@ -1092,7 +1089,7 @@ a:not(.collapsed) .arrow {
 }
 
 .cta {
-  min-height: 400px;
+  min-height: 900px;
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/c.jpg") center center;
   background-size: cover;  /* Ajusta completamente la imagen */
   background-repeat: no-repeat;
@@ -1186,7 +1183,7 @@ a:not(.collapsed) .arrow {
   padding: 0 10px;
 }
 .clients .swiper-slide img {
-  max-width: 130px; /* Ajusta este valor según tus necesidades */
+  max-width: 180px; /* Ajusta este valor según tus necesidades */
   max-height: 80px; /* Ajusta este valor según tus necesidades */
   width: auto;
   height: auto;
