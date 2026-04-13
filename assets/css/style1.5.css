@@ -1686,17 +1686,17 @@ a:not(.collapsed) .arrow {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #493c3e;
+  color: #000000;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
-  color: #816a6e;
+  font-size: 16px;
+  color: #000000;
 }
 
 .contact .info .email,
@@ -1763,8 +1763,8 @@ a:not(.collapsed) .arrow {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);;
   font-size: 16px;
 }
 
@@ -1784,7 +1784,7 @@ a:not(.collapsed) .arrow {
 .contact .php-email-form button[type=button] {
   background: #000000;
   border: 0;
-  padding: 10px 28px;
+  padding: 14px 28px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
@@ -2356,8 +2356,8 @@ a:not(.collapsed) .arrow {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #444444;
-  font-size: 14px;
+  color: #000000;
+  font-size: 18px;
   background: #f6f4f4;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
