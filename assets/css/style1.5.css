@@ -2523,3 +2523,20 @@ a:not(.collapsed) .arrow {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
+
+/* Estilo base (Escritorio) */
+.copyright {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  gap: 5px; /* Espacio pequeño entre el nombre y el texto de derechos */
+  text-align: center;
+}
+
+/* Tablet y Mobile (Menos de 768px) */
+@media (max-width: 768px) {
+  .copyright .rights {
+    display: block; /* Fuerza a que ocupe todo el ancho y baje */
+    width: 100%;    /* Asegura que el salto ocurra */
+  }
+}
