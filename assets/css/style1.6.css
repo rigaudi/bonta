@@ -1001,7 +1001,11 @@ a:not(.collapsed) .arrow {
   }
   .col-md-6 {
     max-width: 100%; /* Ocupa el ancho completo en dispositivos pequeños */
-    margin-bottom: 20px; /* Espaciado entre tarjetas */
+    padding-bottom: 0px !important;
+  }
+
+  #sendButton{
+  width: 100%; /* Ocupa el ancho completo */
   }
 }
 
